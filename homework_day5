@@ -1,2 +1,31 @@
 #Question: Create three classes named Animals, Dogs and Cats. Add some features to these classes. Create some functions with these attributes. You have to do it using inheritance.
 
+class Animals:
+    def __init__(self, breed, name, nationality):
+        self.breed = breed
+        self.name = name
+        self.nationality = nationality
+    
+    def print_breed(self):
+        print(self.breed)
+    
+    def print_nationality():
+        print(self.name + " is " + self.natioanlity)
+        
+  class Dogs:
+    def __init__(self, breed, color):
+        self.breed = breed
+        self.color = color  
+    
+    def print_color(self):
+        print(self.color)
+    
+   class Cats:
+    def __init__(self, color, size):
+        self.color = color
+        self.size = size  
+    
+    def print_size(self):
+        print(self.size)
+              
+        
