@@ -30,7 +30,7 @@ user_name2 = input("Please enter your Username: ")
 
 password2 = input("Please enter your Password: ")
 
-if (user_name2 not in database[Username] and password2 in database [Password]):
+if (user_name2 not in database[Username] and password2 in database[Password]):
    print("Incorrect username")
 elif (user_name2 in database[Username] and password2 not in database[Password]):
   print("Incorrect password")
