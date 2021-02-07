@@ -1,0 +1,40 @@
+#Question 1:
+#User login application: -Get Username and Password values from the user. -Check the values in an if statement and tell the user if they were successful.
+
+print("**********Login Page**********")
+user_name = "Elsa"
+password ="el3720"
+
+user_name1 =input("Please enter your username: ")
+
+password1= input("Please enter your password: ")
+
+if (user_name != user_name1 and password == password1):
+    print("Incorrect username")
+elif (user_name==user_name1 and password != password1):
+    print("Incorrect password")
+elif (user_name != user_name1 and password!= password1):
+    print("Incorrect user name and password")
+else:
+    print("User login verified, you are now logging in.")
+    
+Please enter your username: Elsa
+Please enter your password: el3720
+User login verified, you are now logging in.
+
+#Extra: Try building the same user login application but this time, use a dictionary.
+
+database = {"Username" : "Elsa", "Password" : "el3720" }
+
+user_name2 = input("Please enter your Username: ")
+
+password2 = input("Please enter your Password: ")
+
+if (user_name2 not in database[Username] and password2 in database[Password]):
+   print("Incorrect username")
+elif (user_name2 in database[Username] and password2 not in database[Password]):
+  print("Incorrect password")
+elif (user_name2 not in database[Username] and password2 not in database[Password]):
+  print("Incorrect username and password")
+else:
+  print("User login verified, you are now logging in.")
